@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
 
-    <style name="Theme.PruebaTecnica" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.PruebaTecnica" parent="android:Theme.Material.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorForPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorForPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Material" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorForPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorForPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Disable dark theme -->
+        <item name="android:forceDarkAllowed" ns1:ignore="NewApi">false</item>
+    </style>
 </resources>

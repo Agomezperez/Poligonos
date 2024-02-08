@@ -1,10 +1,7 @@
 
-_kotlin:S5527Ì"?Enable server hostname verification on this SSL/TLS connection.(¹…¼›8óÁÉä×1
-ekotlin:S4830·"@Enable server certificate validation on this SSL/TLS connection.(ÜĞ®Àùÿÿÿÿ8óÁÉä×1
-`kotlin:S4830»"@Enable server certificate validation on this SSL/TLS connection.(–Õë£8óÁÉä×1
-=kotlin:S1254"Remove this commented out code.(–±Ù8õÁÉä×1
-=kotlin:S125V"Remove this commented out code.(–±Ù8õÁÉä×1
-=kotlin:S125x"Remove this commented out code.(–±Ù8öÁÉä×1
-Lkotlin:S4423Å",Change this code to use a stronger protocol.(³Æ‹8øÁÉä×1
-kotlin:S1186·"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ÜĞ®Àùÿÿÿÿ8Ê‰Èä×1
-zkotlin:S1186»"ZAdd a nested comment explaining why this function is empty or complete the implementation.(–Õë£8Æ±×©Ø1
+_kotlin:S5527°"?Enable server hostname verification on this SSL/TLS connection.(¹…¼›8óÁÉä×1
+ekotlin:S4830"@Enable server certificate validation on this SSL/TLS connection.(ÜĞ®Àùÿÿÿÿ8óÁÉä×1
+`kotlin:S4830¡"@Enable server certificate validation on this SSL/TLS connection.(–Õë£8óÁÉä×1
+Lkotlin:S4423ª",Change this code to use a stronger protocol.(³Æ‹8øÁÉä×1
+kotlin:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ÜĞ®Àùÿÿÿÿ8Ê‰Èä×1
+zkotlin:S1186¡"ZAdd a nested comment explaining why this function is empty or complete the implementation.(–Õë£8Æ±×©Ø1

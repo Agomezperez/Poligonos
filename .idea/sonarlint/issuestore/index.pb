@@ -1,8 +1,6 @@
 
 k
 ;app/src/main/java/com/example/pruebatecnica/MainActivity.kt,c\f\cf3003190e788589c0edf357743137ef2309f72c
-w
-Gapp/src/main/java/com/example/pruebatecnica/domain/model/FiguraModel.kt,f\0\f01099c78c01590fc21a80cbf6d4c85ebafd23d3
 v
 Fapp/src/main/java/com/example/pruebatecnica/domain/model/PointModel.kt,f\4\f4105e96ab573e23c3e286cfe6aaf111c0a693bc
 †
@@ -53,3 +51,27 @@ w
 Gapp/src/main/java/com/example/pruebatecnica/PRUEBATECNICAApplication.kt,d\e\de6f7373ad38e8d9e3b4026f67bd1e0a33d7fd04
 
 Oapp/src/main/java/com/example/pruebatecnica/api/util/PointModelListConverter.kt,7\f\7f6cc14ec24802359e046ecd68838a141603e741
+o
+?app/src/main/java/com/example/pruebatecnica/ui/MainPresenter.kt,a\d\ad5d15e43bf6880c065d8d9fa06c1b3f61a07dcc
+s
+Capp/src/main/java/com/example/pruebatecnica/ui/MainPresenterImpl.kt,0\a\0a30d1161f80b0de01168289ec6086456191bce1
+
+Oapp/src/main/java/com/example/pruebatecnica/domain/use_case/GetAllFigureUseC.kt,c\f\cfc1e62eb9f1535c5b8e0312313ec9c991824685
+u
+Eapp/src/main/java/com/example/pruebatecnica/ui/figuras/FigurasView.kt,e\3\e3cd9535b940c60490a7a2c4b58f8870e4928b36
+F
+app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
+p
+@app/src/main/java/com/example/pruebatecnica/ui/FigurasAdapter.kt,0\c\0cb0dbac03a8a6ef68b3389403e9bf06199a62e0
+o
+?app/src/main/java/com/example/pruebatecnica/api/util/UiEvent.kt,d\b\db71997cb5925257b503f1596c16b85b002bc163
+p
+@app/src/main/java/com/example/pruebatecnica/ui/DesignActivity.kt,8\7\876ec9b178dab53e7e37196e132174c2487fe064
+r
+Bapp/src/main/java/com/example/pruebatecnica/domain/util/UiEvent.kt,5\e\5e92a7df4e99d94893657470a1c7822c4c25a186
+
+Oapp/src/main/java/com/example/pruebatecnica/ui/design_figuras/DesignActivity.kt,3\d\3db8e44f23217767cab88ff3f4fc32bfa196fe3f
+}
+Mapp/src/main/java/com/example/pruebatecnica/ui/main/adapter/FigurasAdapter.kt,d\8\d8a8890c662e9f89a25717c0d1d994f2d58309f2
+s
+Capp/src/main/java/com/example/pruebatecnica/ui/main/MainActivity.kt,f\5\f571cc11e57fc40ce7768e2b810c624c9f709cf3

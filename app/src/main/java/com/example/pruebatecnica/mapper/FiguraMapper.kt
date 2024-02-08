@@ -17,16 +17,5 @@ fun FiguraApiModel.toEntity(): FiguraEntity {
     )
 }
 
-fun FiguraEntity.toModel(): FiguraApiModel {
-    return FiguraApiModel(
-        nombre = nombre,
-        puntos = puntos.map { punto ->
-            PointModel(
-                x = punto.x,
-                y = punto.y
-            )
-        }
-    )
-}
 
 

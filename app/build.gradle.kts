@@ -3,8 +3,8 @@ plugins {
     id("kotlin-android")
     id("org.jetbrains.kotlin.android")
     id("dagger.hilt.android.plugin")
+    id("kotlin-parcelize")
     id("kotlin-kapt")
-
 }
 
 android {
@@ -24,9 +24,15 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
 
+        getByName("debug") {
+            isMinifyEnabled = false
+        }
     }
 
     compileOptions {
@@ -38,10 +44,15 @@ android {
         jvmTarget = "1.8"
     }
 
-    buildFeatures {
+    buildFeatures{
         viewBinding = true
+        dataBinding = true
+
     }
 
+    viewBinding {
+        enable = true
+    }
 
 }
 
@@ -102,4 +113,7 @@ dependencies {
 
     implementation ("androidx.browser:browser:1.3.0")
 
+    implementation ("androidx.ui:ui-tooling:0.1.0-dev17")
+    implementation ("androidx.ui:ui-layout:0.1.0-dev14")
+    implementation ("androidx.ui:ui-material:0.1.0-dev14")
 }

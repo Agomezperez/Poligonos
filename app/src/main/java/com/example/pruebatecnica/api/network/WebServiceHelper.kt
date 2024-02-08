@@ -34,12 +34,11 @@ object WebServiceHelper {
         setLevel(HttpLoggingInterceptor.Level.BODY)
     }
 
-    // Corregimos la creación del OkHttpClient
     val okHttpClient: OkHttpClient = unsafeOkHttpClient.apply {
-        addInterceptor(interceptor) // Quita el .build() de aquí
+        addInterceptor(interceptor)
         connectTimeout(80, TimeUnit.SECONDS)
         readTimeout(80, TimeUnit.SECONDS)
-    }.build() // Agrega el .build() aquí
+    }.build()
 
     val gsonWithAdapterType: Gson = GsonBuilder()
         .registerTypeAdapter(Long::class.java, LongTypeAdapter())
@@ -49,13 +48,6 @@ object WebServiceHelper {
 
     private class LongTypeAdapter : TypeAdapter<Long>() {
         override fun write(out: JsonWriter?, value: Long?) {
-            /*
-            if (value == null) {
-                out?.nullValue()
-                return
-            }
-            */
-
             if (value == null) {
                 out?.value(0)
                 return
@@ -83,13 +75,6 @@ object WebServiceHelper {
 
     private class DoubleTypeAdapter : TypeAdapter<Double>() {
         override fun write(out: JsonWriter?, value: Double?) {
-            /*
-            if (value == null) {
-                out?.nullValue()
-                return
-            }
-            */
-
             if (value == null) {
                 out?.value(0)
                 return
@@ -117,13 +102,6 @@ object WebServiceHelper {
 
     private class IntTypeAdapter : TypeAdapter<Int>() {
         override fun write(out: JsonWriter?, value: Int?) {
-            /*
-            if (value == null) {
-                out?.nullValue()
-                return
-            }
-            */
-
             if (value == null) {
                 out?.value(0)
                 return
@@ -170,12 +148,8 @@ object WebServiceHelper {
         }
     }
 
-    // Create a trust manager that does not validate certificate chains
     private val unsafeOkHttpClient: OkHttpClient.Builder
-        // Install the all-trusting trust manager
-        // Create an ssl socket factory with our all-trusting manager
         get() = try {
-            // Create a trust manager that does not validate certificate chains
             val trustAllCerts = arrayOf<TrustManager>(
                 @SuppressLint("CustomX509TrustManager")
                 object : X509TrustManager {
@@ -193,11 +167,9 @@ object WebServiceHelper {
                 }
             )
 
-            // Install the all-trusting trust manager
             val sslContext = SSLContext.getInstance("SSL")
             sslContext.init(null, trustAllCerts, SecureRandom())
 
-            // Create an ssl socket factory with our all-trusting manager
             val sslSocketFactory = sslContext.socketFactory
             val builder = OkHttpClient.Builder()
             builder.sslSocketFactory(sslSocketFactory, trustAllCerts[0] as X509TrustManager)
