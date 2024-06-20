@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pruebatecnica"
+    namespace = "com.example.poligonos"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.pruebatecnica"
+        applicationId = "com.example.poligonos"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
